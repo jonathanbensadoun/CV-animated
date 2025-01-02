@@ -36,6 +36,8 @@ export default function Home() {
       <div className="relative z-10">
         <Hero />
         <Experience />
+        <Experience />
+        <Experience />
         <Skills />
       </div>
     </main>

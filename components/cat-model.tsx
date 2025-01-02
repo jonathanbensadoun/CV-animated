@@ -66,12 +66,18 @@ export function RocketModel({ scrollProgress }: { scrollProgress: number }) {
     if (group.current) {
       // Rotation basée sur le scroll
       group.current.rotation.y = THREE.MathUtils.lerp(
-        0,
-        Math.PI * 2,
+        2.8,
+        Math.PI * 3,
         scrollProgress
       );
+
       // Animation de rebond
-      group.current.position.y = Math.sin(state.clock.elapsedTime * 2) * 0.1;
+
+      // Orientation initiale vers le bas
+      group.current.rotation.x = Math.PI; // 180° pour regarder vers le bas
+      // group.current.position.y = 1; // Déplacer la fusée vers le haut
+      group.current.position.y =
+        1.3 + Math.sin(state.clock.elapsedTime * 2) * 0.1;
     }
   });
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { Github, GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "../themeButton";
 
